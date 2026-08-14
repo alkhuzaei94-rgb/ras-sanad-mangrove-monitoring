@@ -53,10 +53,11 @@ catalogue: `COPERNICUS/S2_SR_HARMONIZED`, `COPERNICUS/S1_GRD`,
 `JRC/GSW1_4/GlobalSurfaceWater`, and `USGS/SRTMGL1_003`.
 
 The historical Ras Sanad survey polygons (`RasSanad_1967/1998/2005/2009/2016`
-shapefiles) are third-party data provided by the Environment and Climate
-Directorate, Kingdom of Bahrain, and are not redistributed here. Requests for
-these data should be directed to that authority. All derived numerical
-results appear as tables in the manuscript.
+shapefiles) originate from independent previous research and are used with
+permission; they are not ours to redistribute and are not included here.
+Requests concerning these data may be addressed to the corresponding author
+of the manuscript, who can refer them to the data owners. All derived
+numerical results appear as tables in the manuscript.
 
 ## Citation
 
