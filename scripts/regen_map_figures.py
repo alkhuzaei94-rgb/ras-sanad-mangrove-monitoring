@@ -27,7 +27,7 @@ plt.rcParams.update({'font.family': 'DejaVu Sans', 'font.size': 22,
                      'figure.dpi': 300, 'savefig.dpi': 600})
 
 # ── Paths ──────────────────────────────────────────────────────────────────────
-BASE     = r'C:\Users\Manaf\Documents\Jupyter'
+BASE     = r'C:\path\to\workspace'
 SHP_DIR  = os.path.join(BASE, '_archive_root_duplicates')   # historical shapefiles
 OUT_DIR  = os.path.join(BASE, 'mangrove', 'Ras_Sanad_Mangrove_Outputs')
 OUT_MAPS = os.path.join(OUT_DIR, 'maps')
@@ -36,7 +36,7 @@ os.makedirs(OUT_MAPS, exist_ok=True)
 
 # ── EE init ────────────────────────────────────────────────────────────────────
 print('Initialising Earth Engine...')
-ee.Initialize(project='ee-mkhuzaei94')
+ee.Initialize(project=os.environ.get('EE_PROJECT'))  # set EE_PROJECT to your own Cloud project
 print('  EE ready.')
 
 # ── Constants (from Cell 1) ───────────────────────────────────────────────────

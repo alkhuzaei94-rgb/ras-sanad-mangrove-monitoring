@@ -27,7 +27,7 @@ sys.stdout.reconfigure(encoding='utf-8')
 
 import pandas as pd
 
-BASE = r'C:\Users\Manaf\Documents\Jupyter\mangrove'
+BASE = r'C:\path\to\workspace\mangrove'
 VTAB = os.path.join(BASE, 'Ras_Sanad_Verification', 'tables')
 VACC = os.path.join(BASE, 'Ras_Sanad_Verification', 'accuracy')
 OTAB = os.path.join(BASE, 'Ras_Sanad_Mangrove_Outputs', 'tables')

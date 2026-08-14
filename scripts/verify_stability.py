@@ -46,7 +46,7 @@ plt.rcParams.update({
 })
 
 # ── Paths ──────────────────────────────────────────────────────────────────────
-BASE      = r'C:\Users\Manaf\Documents\Jupyter'
+BASE      = r'C:\path\to\workspace'
 VOUT      = os.path.join(BASE, 'Ras_Sanad_Verification')
 VMAPS     = os.path.join(VOUT, 'maps')
 VACC      = os.path.join(VOUT, 'accuracy')
@@ -85,7 +85,7 @@ def save_ckpt(name, data):
 
 # ── EE init ────────────────────────────────────────────────────────────────────
 plog('=== PHASE 0: Earth Engine Init ===')
-ee.Initialize(project='ee-mkhuzaei94')
+ee.Initialize(project=os.environ.get('EE_PROJECT'))  # set EE_PROJECT to your own Cloud project
 plog('  EE ready.')
 
 # ── Constants (identical to notebook Cell 1) ───────────────────────────────────

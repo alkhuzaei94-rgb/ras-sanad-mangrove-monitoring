@@ -30,7 +30,7 @@ from matplotlib.lines import Line2D
 from shapely.geometry import Point
 from pyproj import Transformer
 
-BASE    = r'C:\Users\Manaf\Documents\Jupyter'
+BASE    = r'C:\path\to\workspace'
 SHP_DIR = os.path.join(BASE, '_archive_root_duplicates')
 MG      = os.path.join(BASE, 'mangrove', 'Ras_Sanad_Mangrove_Outputs')
 MAPS    = os.path.join(MG, 'maps')

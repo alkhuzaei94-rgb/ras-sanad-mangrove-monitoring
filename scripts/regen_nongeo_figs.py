@@ -19,7 +19,7 @@ matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 import matplotlib.patches as mpatches
 
-BASE   = r'C:\Users\Manaf\Documents\Jupyter\mangrove'
+BASE   = r'C:\path\to\workspace\mangrove'
 MAPS   = os.path.join(BASE, 'Ras_Sanad_Mangrove_Outputs', 'maps')
 ACC    = os.path.join(BASE, 'Ras_Sanad_Mangrove_Outputs', 'accuracy')
 TABLES = os.path.join(BASE, 'Ras_Sanad_Mangrove_Outputs', 'tables')

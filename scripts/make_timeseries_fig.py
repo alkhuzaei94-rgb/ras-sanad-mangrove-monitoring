@@ -15,7 +15,7 @@ import matplotlib.patches as mpatches
 import matplotlib.lines   as mlines
 import matplotlib.ticker  as mticker
 
-BASE   = r'C:\Users\Manaf\Documents\Jupyter\mangrove'
+BASE   = r'C:\path\to\workspace\mangrove'
 MAPS   = os.path.join(BASE, 'Ras_Sanad_Mangrove_Outputs', 'maps')
 TABLES = os.path.join(BASE, 'Ras_Sanad_Mangrove_Outputs', 'tables')
 

@@ -21,7 +21,7 @@ import matplotlib.lines as mlines
 from shapely.geometry import Point
 from pyproj import Transformer
 
-BASE = r'C:\Users\Manaf\Documents\Jupyter'
+BASE = r'C:\path\to\workspace'
 MAPS = os.path.join(BASE, 'mangrove', 'Ras_Sanad_Mangrove_Outputs', 'maps')
 
 # ── Load shapefiles ───────────────────────────────────────────────────────────

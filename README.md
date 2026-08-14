@@ -39,12 +39,12 @@ scripts.
 ## Requirements
 
 Python 3.11+ with the packages in `requirements.txt`, and an authenticated
-[Google Earth Engine](https://earthengine.google.com/) account. Replace the
-Earth Engine project id in `ee.Initialize(project=...)` with your own, and
-edit the path constants at the top of each script (`BASE`, `SHP_DIR`,
-`OUT_DIR` or equivalents) to point at your local directories. Paths are left
-exactly as run rather than abstracted, so that the published code is the
-executed code.
+[Google Earth Engine](https://earthengine.google.com/) account. Set the
+`EE_PROJECT` environment variable to your own Earth Engine Cloud project, and
+point the path constants at the top of each script (`BASE`, `SHP_DIR`,
+`OUT_DIR` or equivalents) at your local directories; both carry neutral
+placeholders. Apart from these placeholders, the scripts are published
+exactly as run.
 
 ## Data
 

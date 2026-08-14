@@ -25,7 +25,7 @@ import pandas as pd
 import geopandas as gpd
 import ee
 
-BASE    = r'C:\Users\Manaf\Documents\Jupyter'
+BASE    = r'C:\path\to\workspace'
 SHP_DIR = os.path.join(BASE, '_archive_root_duplicates')
 VTAB    = os.path.join(BASE, 'mangrove', 'Ras_Sanad_Verification', 'tables')
 os.makedirs(VTAB, exist_ok=True)
@@ -34,7 +34,7 @@ def plog(msg):
     print(f'[{time.strftime("%H:%M:%S")}] {msg}', flush=True)
 
 plog('EE init...')
-ee.Initialize(project='ee-mkhuzaei94')
+ee.Initialize(project=os.environ.get('EE_PROJECT'))  # set EE_PROJECT to your own Cloud project
 
 # ROI identical to production workflow: centroid of the 1967 polygon, 2 km buffer
 gdf1967 = gpd.read_file(os.path.join(SHP_DIR, 'RasSanad_1967.shp')).to_crs(4326)
