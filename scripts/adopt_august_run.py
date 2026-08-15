@@ -1,9 +1,9 @@
 """
-_adopt_august_run.py
+adopt_august_run.py
 ====================
 Adopts the August 2026 rerun as the single source of truth for every number in
-the resubmission. Rewrites the canonical output tables that the figure scripts
-and the paper builder read, keeping the April 2026 versions as *_apr2026
+the analysis. Rewrites the canonical output tables that the figure scripts
+read, keeping the April 2026 versions as *_apr2026
 backups for provenance.
 
 Sources (committed):
@@ -17,10 +17,10 @@ Targets:
   Ras_Sanad_Verification/accuracy/Table_Accuracy_Metrics.xlsx
 
 Adopted threshold: T* = 0.90 (DSC plateau 0.89-0.93 + minimal area bias vs the
-2016 reference; see RESUBMISSION_PLAN.md).
+2016 reference).
 
 Run:
-  & "C:\\ProgramData\\anaconda3\\envs\\geoai_rs\\python.exe" _adopt_august_run.py
+  python adopt_august_run.py
 """
 import sys, os, json, shutil
 sys.stdout.reconfigure(encoding='utf-8')

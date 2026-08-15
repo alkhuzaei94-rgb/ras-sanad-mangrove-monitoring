@@ -1,5 +1,5 @@
 """
-_make_comparison_figure.py
+make_comparison_figure.py
 Fig5_Historical_Comparison.png — Publication-quality 1967 vs 2025 comparison.
 MDPI Remote Sensing, 600 dpi.
 

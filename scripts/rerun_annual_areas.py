@@ -1,8 +1,8 @@
 """
-_rerun_annual_areas.py
+rerun_annual_areas.py
 ======================
-Regenerates the full results chain on the CURRENT GEE collection state, so the
-resubmission can adopt one internally consistent August 2026 run:
+Regenerates the full results chain on the CURRENT GEE collection state,
+producing one internally consistent August 2026 run:
 
   1. Training data + both RF models (fused, S2-only), production seeds.
   2. Validation on the 2023 composite (1000 pts, 500/class, seed 1041):
@@ -13,7 +13,7 @@ resubmission can adopt one internally consistent August 2026 run:
 Output: Ras_Sanad_Verification/tables/Rerun_2026-08_Annual_Areas.xlsx + .json
 
 Run:
-  & "C:\\ProgramData\\anaconda3\\envs\\geoai_rs\\python.exe" _rerun_annual_areas.py
+  python rerun_annual_areas.py
 """
 import sys, os, json, time
 sys.stdout.reconfigure(encoding='utf-8')

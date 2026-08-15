@@ -1,11 +1,11 @@
 """
-_r32_threshold_sweep.py
+threshold_sweep.py
 =======================
-Reviewer 3, comment 2: extend the DSC threshold sweep across 0.30-1.00, with
+Extends the DSC threshold sweep across 0.30-1.00, with
 fine 0.01 increments in 0.80-1.00, to establish whether T* = 0.90 is a true
 optimum or a boundary artefact.
 
-Method: reproduces the production chain of _verify_stability.py exactly
+Method: reproduces the production chain of verify_stability.py exactly
 (same ROI, same shapefiles, same label image, same per-year sampling seeds,
 same RF: smileRandomForest 150 trees seed 42 PROBABILITY, same tidal mask
 and morphological cleaning), then sweeps the extended threshold set on the
@@ -19,7 +19,7 @@ delta table and flags any |dDice| > 0.005 or |darea| > 0.5 ha.
 Output: Ras_Sanad_Verification/tables/Table_Calibration_Extended.xlsx + .json
 
 Run:
-  & "C:\\ProgramData\\anaconda3\\envs\\geoai_rs\\python.exe" _r32_threshold_sweep.py
+  python threshold_sweep.py
 """
 import sys, os, json, time
 sys.stdout.reconfigure(encoding='utf-8')
@@ -136,7 +136,7 @@ def s2_composite(year, region):
     return col.median().select(S2_BANDS).clip(region)
 
 def s1_composite(year, region):
-    # EXACT replica of production (_verify_stability.py), including the
+    # EXACT replica of production (verify_stability.py), including the
     # fallback: if the calendar-year descending collection is empty (true for
     # 2016), widen to year-1..year+1 and drop the orbit filter.
     col = (ee.ImageCollection('COPERNICUS/S1_GRD')

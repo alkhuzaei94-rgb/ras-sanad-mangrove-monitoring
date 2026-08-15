@@ -29,11 +29,11 @@ HIST_AREAS = {1967: 97.30, 1998: 56.99, 2005: 37.54, 2009: 35.23, 2016: 34.05}
 
 # =============================================================================
 # FIGURE 1 — Area Time Series
-# SUPERSEDED by _make_timeseries_fig.py — run that script for the publication
+# SUPERSEDED by make_timeseries_fig.py — run that script for the publication
 # figure. This section still runs but saves to a _legacy filename so it never
-# overwrites the output of _make_timeseries_fig.py.
+# overwrites the output of make_timeseries_fig.py.
 # =============================================================================
-print('Regenerating Fig_Area_TimeSeries_legacy.png (see _make_timeseries_fig.py for pub version)...')
+print('Regenerating Fig_Area_TimeSeries_legacy.png (see make_timeseries_fig.py for pub version)...')
 
 plt.rcParams.update({
     'font.family':       'DejaVu Sans',

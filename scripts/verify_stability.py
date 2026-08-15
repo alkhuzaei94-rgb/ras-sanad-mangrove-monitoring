@@ -1,5 +1,5 @@
 """
-_verify_stability.py
+verify_stability.py
 ====================
 Comprehensive reproducibility verification and stability analysis for the
 Ras Sanad Mangrove Recovery 2016-2025 workflow.
@@ -19,8 +19,8 @@ Execution phases:
  12.  Write verification report
 
 Usage:
-  "C:/ProgramData/anaconda3/envs/geoai_rs/python.exe" _verify_stability.py
-  (use geoai_rs env which has earthengine-api + geopandas + PIL)
+  python verify_stability.py
+  (requires earthengine-api, geopandas, and Pillow)
 """
 
 import sys, os, json, time, warnings, traceback

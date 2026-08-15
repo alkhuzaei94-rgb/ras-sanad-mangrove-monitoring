@@ -22,18 +22,18 @@ re-runs at a later date may differ at the level of a few percent.
 | Script | Purpose |
 |---|---|
 | `scripts/verify_stability.py` | Full pipeline: training data, Random Forest training and tuning, threshold calibration, annual areas 2016-2025, validation, reproducibility checks. |
-| `scripts/r14_scene_counts.py` | Per-year Sentinel-2 and Sentinel-1 scene counts and cloud statistics (manuscript Table 2). |
-| `scripts/r32_threshold_sweep.py` | Extended DSC threshold sweep, 0.30-1.00 with 0.01 steps above 0.80 (manuscript Table 4, Figure 3). |
+| `scripts/scene_counts.py` | Per-year Sentinel-2 and Sentinel-1 scene counts and cloud statistics (manuscript Table 2). |
+| `scripts/threshold_sweep.py` | Extended DSC threshold sweep, 0.30-1.00 with 0.01 steps above 0.80 (manuscript Table 4, Figure 3). |
 | `scripts/rerun_annual_areas.py` | Regenerates both classifiers, the 2023 validation matrices, and annual areas at T = 0.90 and 0.92 (manuscript Tables 3 and 6). |
-| `scripts/adopt_august_run.py` | Writes the canonical tables the figure scripts and manuscript builder read. |
+| `scripts/adopt_august_run.py` | Writes the canonical tables that the figure scripts read. |
 | `scripts/regen_map_figures.py` | Fetches 10 m display arrays and renders the annual classification, polygon, and probability map figures. |
 | `scripts/regen_nongeo_figs.py` | Confusion-matrix and calibration-curve figures. |
 | `scripts/make_timeseries_fig.py` | Annual area time-series figure. |
 | `scripts/make_comparison_figure.py` | 1967 vs 2025 extent comparison figure. |
 | `scripts/make_study_area_fig.py` | Study-area location figure. |
 
-Suggested run order: `r14_scene_counts` → `verify_stability` →
-`r32_threshold_sweep` → `rerun_annual_areas` → `adopt_august_run` → figure
+Suggested run order: `scene_counts` → `verify_stability` →
+`threshold_sweep` → `rerun_annual_areas` → `adopt_august_run` → figure
 scripts.
 
 ## Requirements

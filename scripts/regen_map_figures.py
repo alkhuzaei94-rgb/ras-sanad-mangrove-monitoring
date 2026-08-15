@@ -549,8 +549,8 @@ _s = _PIL.open(out3).size
 print(f'  Saved: {out3}  ({_s[0]}x{_s[1]}px)')
 
 # Fig1-3 regenerated from the current-archive arrays. Stop here: the study-area
-# figure and time series are produced by _make_study_area_fig.py and
-# _make_timeseries_fig.py respectively.
+# figure and time series are produced by make_study_area_fig.py and
+# make_timeseries_fig.py respectively.
 print('\nDone (Fig1/Fig2/Fig3). Study-area and time-series figures are handled '
       'by their dedicated scripts.')
 sys.exit(0)

@@ -1,11 +1,11 @@
 """
-_r14_scene_counts.py
+scene_counts.py
 ====================
-Reviewer 1, comment 4: per-year Sentinel-2 and Sentinel-1 scene counts and
+Per-year Sentinel-2 and Sentinel-1 scene counts and
 cloud statistics for each annual composite, 2016-2025.
 
 Replicates the exact collection filters of the production workflow
-(_verify_stability.py s2_composite / s1_composite) and reports, per year:
+(verify_stability.py s2_composite / s1_composite) and reports, per year:
   - S2: granules before and after the CLOUDY_PIXEL_PERCENTAGE < 50 screen,
         distinct acquisition dates, cloud-percentage mean/median/min/max
   - S1: granules (IW, VV+VH, descending), distinct acquisition dates
@@ -14,7 +14,7 @@ Replicates the exact collection filters of the production workflow
 Output: Ras_Sanad_Verification/tables/Table_SceneCounts.xlsx + .json
 
 Run:
-  & "C:\\ProgramData\\anaconda3\\envs\\geoai_rs\\python.exe" _r14_scene_counts.py
+  python scene_counts.py
 """
 import sys, os, json, time
 sys.stdout.reconfigure(encoding='utf-8')
